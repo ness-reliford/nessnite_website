@@ -1,0 +1,149 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Ness Nite Bio</title>
+
+  <style>
+    body {
+      background-color: aqua;
+      font-family:'Courier New', Courier, monospace
+    }
+
+    h1, h2, h3, h4 {
+      text-align: center;
+    }
+
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #mainNav {
+      margin-bottom: 20px;
+    }
+
+    #mainNav a {
+      color: palevioletred
+    }
+
+    .center{
+      width: 20%
+    }
+
+    aside {
+      font-size: 12px;
+    }
+
+    </style>
+
+</head>
+
+
+<body>
+  
+  <h1>NESS NITE</h1>
+
+  <h2>Artist. Producer. Engineer.</h2>
+
+  <div class="container">
+    <nav id="mainNav">
+      <a href="#LISTEN">LISTEN</a> |
+      <a href="SHOWS">SHOWS</a> |
+      <a href="MERCH">MERCH</a> |
+      <a href="PRESS">PRESS</a>
+    </nav>
+  </div>  
+
+  <div class="container">
+    <img src="https://images.genius.com/d35aeeede306975e38b6881bc6690d52.500x500x1.jpg"
+    alt="Ness Nite" class="center">
+  </div>
+
+  <div class="container">
+    <aside>
+      <p>Cover art for 'Expectations' - one of the singles from the Dream Girl Album. Created by Ness.</p>
+    </aside>
+  </div>
+
+  <div class="container">
+    <section>
+      <h3>ABOUT</h3>
+      <p>
+        Ness Nite is a genre-blending musical artist
+        who has captivated the world of alternative
+        music with their<br> unique sonic fusion of hip-hop,
+        R&B, and dream-pop. Currently-based in Minneapolis,
+        Nite has been<br> active in the music scene since the mid-2010s,
+        quickly establishing themself as a boundary-pushing artist.
+      </p>
+    </section>
+  </div>
+
+
+  <div class="container">
+    <section>
+      <h3>DISCOGRAPHY</h3>
+      <p>
+        Nite Time (EP 2016)<br>
+        Dream Girl (LP 2018)<br>
+        Killing Chiron (LP 2023)
+      </p>
+    </section>
+  </div>
+
+
+
+  <div class="container">
+    <section>
+      <h3>Join the mailing list!</h3>
+      <form action=" /submit_form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <input type="submit" value="Sign up">
+      </form>
+    </section>
+  </div>
+
+
+</body>
+
+
+</html>    
